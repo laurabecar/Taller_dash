@@ -22,7 +22,7 @@ app.config.suppress_callback_exceptions = True
 # Load data from csv
 def load_data():
     # To do: Completar la función 
-    df = pd.read_csv(r'Taller_dash/datos_energia.csv')
+    df = pd.read_csv(r'datos_energia.csv')
 
     # Asumiendo que la primera columna contiene las fechas en formato "yyyy-mm-dd"
     df['time'] = pd.to_datetime(df['time'])
